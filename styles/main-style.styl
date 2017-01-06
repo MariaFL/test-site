@@ -1,0 +1,464 @@
+html
+    height 100%
+    width 100%
+
+body 
+    height 100%
+    width 100%
+    margin 0
+    font-family "Geneva", "Arial", "Helvetica", sans-serif
+
+html,
+body
+    font-size 12px
+
+.wrapper
+    max-width 1300px
+    margin 0 auto
+
+.page
+    display block
+    min-height 100%
+    min-width 1210px
+    overflow hidden
+
+.header
+    display block
+    height 50px
+    background rgb(249,252,255) /* Old browsers */
+    background -moz-linear-gradient(top, rgba(249,252,255,1) 0%, rgba(219,219,219,1) 50%, rgba(187,187,187,1) 100%) /* FF3.6-15 */
+    background -webkit-linear-gradient(top, rgba(249,252,255,1) 0%,rgba(219,219,219,1) 50%,rgba(187,187,187,1) 100%) /* Chrome10-25,Safari5.1-6 */
+    background linear-gradient(to bottom, rgba(249,252,255,1) 0%,rgba(219,219,219,1) 50%,rgba(187,187,187,1) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    font-size 15px
+
+    ul
+        margin 0
+        margin-left 20px
+        padding 0
+
+        li
+            display inline-block
+            position relative
+            padding 16px
+            list-style none
+
+            .drop-down-menu
+                display none
+                position absolute
+                top 49px
+                left 50%
+                z-index 2
+                margin-left -120px
+                height auto
+                overflow hidden
+                color black
+                
+                    
+                ul
+                    display block
+                    margin-top 10px
+                    margin-bottom 10px
+                    margin-right 10px
+                    padding 0
+                    width 200px
+                    border-radius 10 px
+                    background rgb(249,252,255) /* Old browsers */
+                    background -moz-linear-gradient(top, rgba(249,252,255,1) 0%, rgba(219,219,219,1) 50%, rgba(187,187,187,1) 100%) /* FF3.6-15 */
+                    background -webkit-linear-gradient(top, rgba(249,252,255,1) 0%,rgba(219,219,219,1) 50%,rgba(187,187,187,1) 100%) /* Chrome10-25,Safari5.1-6 */
+                    background linear-gradient(to bottom, rgba(249,252,255,1) 0%,rgba(219,219,219,1) 50%,rgba(187,187,187,1) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    box-shadow 0 0 10px
+
+                    li
+                        display block
+                        padding 10px 16px
+
+
+                    li:first-child
+                        border-radius 10px 10px 0 0
+                    
+                    li:last-child
+                        border-radius 0 0 10px 10px
+            
+            .drop-down-menu:before
+                display block
+                position absolute
+                top -4px
+                left 0px
+                width 240px
+                transform scaleX(2)
+                color #F9FCFF
+                text-shadow 0px -9px 8px black
+                text-align center
+                content "▲"
+
+        li:hover
+            background-color #1e679e
+
+            a
+                color white
+                text-decoration none
+
+            .drop-down-menu
+                display block
+
+            li    
+                a
+                    color black
+                    text-decoration underline
+
+            li:hover
+                a
+                    color white
+                    text-decoration none
+
+    a
+        color black
+        text-decoration underline
+
+.after-header
+    display block
+    margin 0
+    padding 0
+    height 110px
+    width 100%
+
+.logo
+    display inline-block
+    padding 15px 0
+
+    img
+        display inline-block
+        float left
+    
+    p
+        display inline-block
+        margin-left 10px
+        color #6e6e6e
+        font-size 28px
+
+.slogan
+    display inline-block
+    float right
+    margin-top 20px
+    width 540px
+    
+    p
+        color #6e6e6e
+        font-size 18px
+
+.conteiner
+    overflow hidden
+
+.aside-info
+    display block
+    float left
+    margin 0
+    width 215px
+
+.landing-navigation-block
+    margin-bottom 15px
+    padding 10px 0
+    text-align center
+    border-radius 20%
+
+    a
+        color #d80007
+
+    h2
+        margin 0
+        font-weight normal
+        font-size 22px
+    
+    p
+        margin 0
+        font-size 12px
+        color #6e6e6e
+        
+.landing-navigation-block:hover
+    background #F5F5F5
+
+.comment-block
+    margin-top 30px
+
+.comment-agent
+    margin-bottom 25px
+
+    img
+        display block
+        float left
+        margin-right 5px
+        border-radius 15%
+    
+    h2
+        margin 0
+        font-size 12px
+    
+    p
+        margin 0
+        font-size 12px
+        color #6e6e6e
+
+.comment
+    display block
+    position relative
+    z-index 1
+    padding 10px
+    font-size 12px
+    border-radius 5%
+    background #F5F5F5
+
+    p
+        margin 0
+
+.comment:after
+    display block
+    position absolute
+    top -15px
+    left 30px
+    border 10px solid transparent
+    border-bottom 6px solid #F5F5F5
+    border-left 15px solid #F5F5F5
+    content ""
+
+.more-comments
+    margin-top 20px
+    text-align center
+
+    a
+        display inline-block
+        padding 10px 0
+        height 20px
+        width 200px
+        color black
+        text-decoration none
+        font-weight bold
+        font-size 16px
+        border-radius 20px
+        background rgb(249,252,255) /* Old browsers */
+        background -moz-linear-gradient(top, rgba(249,252,255,1) 0%, rgba(219,219,219,1) 50%, rgba(187,187,187,1) 100%) /* FF3.6-15 */
+        background -webkit-linear-gradient(top, rgba(249,252,255,1) 0%,rgba(219,219,219,1) 50%,rgba(187,187,187,1) 100%) /* Chrome10-25,Safari5.1-6 */
+        background linear-gradient(to bottom, rgba(249,252,255,1) 0%,rgba(219,219,219,1) 50%,rgba(187,187,187,1) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+
+.more-comments:hover,
+.more-advantages:hover
+    a
+        color white
+        background rgb(0,149,214); /* Old browsers */
+        background -moz-linear-gradient(top, rgb(0,149,214) 0%, rgb(0,110,181) 50%, rgb(0,78,153) 100%); /* FF3.6-15 */
+        background -webkit-linear-gradient(top, rgb(0,149,214) 0%,rgb(0,110,181) 50%,rgb(0,78,153) 100%); /* Chrome10-25,Safari5.1-6 */
+        background linear-gradient(to bottom, rgb(0,149,214) 0%,rgb(0,110,181) 50%,rgb(0,78,153) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+.main
+    display block
+    float right
+    margin 0
+    margin-left 10px
+    margin-bottom 30px
+    padding 0
+    height 100%
+    width 985px
+    line-height 0.1
+    font-size 0.1
+    text-align justify
+    background #FFFAFA
+
+.advantages-block
+    margin-bottom  20px
+    height 305px
+    width 985px
+    background #808080
+    line-height normal
+
+    p,
+    h2
+        margin 0
+
+.more-advantages
+    margin-top 20px
+    text-align center
+
+    a
+        display inline-block
+        padding 10px 0
+        height 20px
+        width 180px
+        color black
+        text-decoration none
+        font-weight bold
+        font-size 16px
+        border-radius 20px
+        background rgb(253,232,125); /* Old browsers */
+        background -moz-linear-gradient(top, rgb(253,232,125) 0%, rgb(219,157,24) 54%, rgb(219,157,24) 100%); /* FF3.6-15 */
+        background -webkit-linear-gradient(top, rgb(253,232,125) 0%,rgb(219,157,24) 54%,rgb(219,157,24) 100%); /* Chrome10-25,Safari5.1-6 */
+        background linear-gradient(to bottom, rgb(253,232,125) 0%,rgb(219,157,24) 54%,rgb(219,157,24) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+
+.additional-units
+    margin 0
+    padding 0
+
+.news,
+.events,
+.assistanse
+    display inline-block
+    margin-bottom 20px
+    padding 5px
+    width 300px
+    height 300px
+    overflow hidden
+    line-height normal
+    border-radius 10px
+    background #696969
+
+    p,
+    a
+        margin 0
+        padding 0
+        color white
+        font-size 12px
+        text-align left
+    
+    .more
+        display block
+        margin 25px 10px 10px 25px
+        font-size 16px
+    
+    section
+        margin-bottom 15px
+        padding-left 25px
+
+.assistanse
+    p
+        padding 0 5px
+
+.personal-event
+        background url("../../img/ico-person.png") no-repeat
+
+.gov-event
+        background url("../../img/ico-h.png") no-repeat
+        
+
+.header-add-units
+        display block
+        height 80px
+        text-decoration none
+
+.news
+    .header-add-units
+            background url("../../img/news.png") no-repeat
+            background-position 20px 10px
+
+            h3
+                display block
+                margin 10px 10px 10px 10px
+                padding 20px 0 0 90px
+                font-size 20px
+                text-align left
+
+.events
+    .header-add-units
+            background url("../../img/mer.png") no-repeat
+            background-position 20px 10px
+
+            h3
+                display block
+                margin 10px 10px 10px 10px
+                padding 20px 0 0 90px
+                font-size 20px
+                text-align left
+
+.assistanse
+    .header-add-units
+            background url("../../img/help.png") no-repeat
+            background-position 20px 10px
+
+            h3
+                display block
+                margin 10px 10px 10px 10px
+                padding 10px 20px 0 90px
+                font-size 20px
+                text-align left
+
+.news,
+.events
+    margin-right 20px
+
+.news
+    background #1e679e
+
+.events
+    background #e1ae05
+
+.assistanse
+    background #ad2726
+
+    p + p
+        margin-top 40px
+
+.btn-business,
+.btn-gov
+    display inline-block
+    margin-top 10px
+    margin-left 5px
+    height 30px
+    border 2px solid #921b1d
+    border-radius 15px
+    background-color #591f1e
+    background -moz-linear-gradient(top, rgb(148,90,88) 0%, rgb(112,56,57) 50%, rgb(84,26,24) 100%) /* FF3.6-15 */
+    background -webkit-linear-gradient(top, rgb(148,90,88) 0%,rgb(112,56,57) 50%,rgb(84,26,24) 100%) /* Chrome10-25,Safari5.1-6 */
+    background linear-gradient(to bottom, rgb(148,90,88) 0%,rgb(112,56,57) 50%,rgb(84,26,24) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    a
+        padding-left 20px
+        text-decoration none
+
+.btn-business:hover,
+.btn-gov:hover
+    background #591f1e
+
+.btn-business
+    a
+        display inline-block
+        padding 7px 20px 7px 40px
+        background-image url("../../img/ico-person.png")
+        background-repeat no-repeat
+        background-position 13px 3px
+
+.btn-gov
+    a
+        display inline-block
+        padding 7px 20px 7px 40px
+        background-image url("../../img/ico-h.png")
+        background-repeat no-repeat
+        background-position 13px 3px
+
+.main:after
+    display block
+    clear  both
+    content ""
+
+.footer
+    display block
+    margin-top -30px
+    height 30px
+    min-width 1200px
+
+    p
+        display inline-block
+        margin 0
+        padding 0
+        width 24.8%
+        font-size small
+        color #6e6e6e
+
+.partners
+        margin-left 33px
+
+        img
+            float left
+            height 33px
+            width 55px
+
+.footer:after
+    display block
+    clear  both
+    content ""
